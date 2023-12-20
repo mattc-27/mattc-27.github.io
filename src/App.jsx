@@ -1,5 +1,12 @@
 import React from 'react';
 
+import {
+    createRoutesFromElements,
+    Route,
+    createBrowserRouter,
+    RouterProvider,
+} from 'react-router-dom';
+
 import './style.css';
 
 import { Layout } from './components/Layout';
