@@ -1,12 +1,28 @@
 import React from 'react';
 
-import './style.css'
+import './style.css';
+
+import { Layout } from './components/Layout';
+import { Home } from './components/Home';
+
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Layout />,
+        children: [
+            {
+                path: '/home',
+                element: <Home />
+            }
+        ]
+    }
+])
+
 
 export default function App() {
 
     return (
-        <div>
-            <h1>Hello world</h1>
-        </div>
+        <RouterProvider router={router} />
     );
 }

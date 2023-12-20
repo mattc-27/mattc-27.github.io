@@ -1,230 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-
 * {
     margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: Lato;
 }
 
 header {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+}
+
+.header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    height: 80px;
     width: 100%;
-    background: #282828;
-    color: #fff;
+    height: 100%;
+    align-items: center;
 }
 
-.header-title {
+.header-logo {}
+
+nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.nav-link {}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    margin: 2% 0 0 2%;
+    margin: 1%;
+    height: 500px;
 }
-
-.header-title h1 {
-    font-size: 1.25em;
-    font-weight: 300;
-}
-
-.welcome-section {
+.wrapper-inner-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: #282828;*/
-    background-color: #272727ab;
-    background-blend-mode: darken;
-    color: #f8f6f6;
-
-    width: 90%;
-    position: absolute;
-    top: 20px;
-    height: 80%;
-    left: 5%;
+    height: auto;
+    margin-bottom: 10%;
+    width: 100%;
 }
 
+.wrapper-inner-about h1 {
+    margin: 1%;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+/* -------------
+FLEX LAYOUTS
+---------------- */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.content-start {
+    justify-content: flex-start;
+}
+
+.content-end {
+    justify-content: flex-end;
+}
+
+.content-between {
+    justify-content: space-between;
+}
+
+.content-even {
+    justify-content: space-evenly;
+}
+
+.content-around {
+    justify-content: space-around;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.center-self {
+    align-self: center;
+}
+
+/*------- 
+MARGIN, WIDTH
+-----------------------*/
+.h-100 {
+    height: 100%;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+/** Margin */
 .m-1 {
     margin: 1%;
 }
 
-/** Welcome *******/
-.welcome-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-basis: 100%;
-    font-size: 0.8em;
-    width: 80%;
-    height: auto;
-    max-height: fit-content;
-    overflow-y: scroll;
+.mb-1 {
+    margin-bottom: 1%;
 }
 
-.welcome-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-self: flex-start;
+.mbt-2 {
+    margin: 2% 0;
 }
 
-.welcome-title h1 {
-    font-size: 5em;
-    font-weight: 300;
+.mt-1 {
+    margin-top: 1%;
 }
 
-.welcome-text p {
-    font-size: 1.5em;
-    line-height: 1.7;
-    font-weight: 300;
+.mbt-1 {
+    margin: 1% 0%;
 }
 
-.section-title {
-    align-self: baseline;
-    font-size: 2em;
-    font-weight: 200;
-    color: #fff;
-    border-bottom: 1% solid #f8f6f6;
+.mrl-1 {
+    margin: 0% 1%;
 }
 
-.section-title h1 {
-    font-weight: 300;
+.m-2 {
+    margin: 2%;
 }
 
-/* ----------------
- Contact 
----------------- */
-.contact-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.ml-1 {
+    margin-left: 1%;
 }
 
-.contact-title h1 {
-    font-size: 5em;
-    font-weight: 300;
-    color: #fff;
-    border-bottom: 1% solid #f8f6f6;
+.mt-2 {
+    margin-top: 2%;
 }
 
-.contact-methods {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50%;
-    width: 100%;
+.mbt-2 {
+    margin: 2% 0%;
 }
 
-.contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    padding: 1%;
+.mrl-2 {
+    margin: 0% 2%;
 }
 
-.bg-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    background-color: #252525;
+.m-3 {
+    margin: 3%;
 }
 
-.bg-content-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-self: center;
-    position: absolute;
-    height: auto;
-    width: 90%;
-    z-index: 999;
-    height: 50%;
-    left: 5%;
-    background-color: #252525a7;
+.mbt-5 {
+    margin: 5% 0%;
 }
 
-.skills-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
-    margin: 0.5%;
+.mt-10 {
+    margin-top: 10%;
 }
 
-.skills-list-mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
+/** Width */
+.w-30 {
+    width: 30%;
 }
 
-.skill-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+.w-35 {
+    width: 35%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
     width: 70%;
-    margin: 0.5%;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 1;
-    margin: 1%;
-    font-size: 1.2em;
-    list-style-position: inside;
+.w-80 {
+    width: 80%;
 }
 
-.skills-list-mobile ul {
+.w-90 {
+    width: 90%;
+}
+
+.w-98 {
+    width: 98%;
+}
+
+.w-100 {
     width: 100%;
-    flex-grow: 1;
-    line-height: 2;
-}
-
-.skills-list li {
-    font-size: 1.5em;
-
-    font-weight: 300;
-    color: #fff;
-}
-
-.skills-list-mobile li {
-    width: 100%;
-    font-size: 1.25em;
-    font-weight: 300;
-    color: #fff;
-}
-
-.bg-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80%;
-    width: auto;
-    font-size: 1.25em;
-    font-weight: 300;
-    line-height: 2;
-    background-color: #1B263B;
-    color: #fff;
 }
 
 /* -------------
@@ -253,3 +245,4 @@ BREAKPOINTS
     }
 
 }
+
