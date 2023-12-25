@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import '../style.css'
 
 function Header() {
 
     return (
         <header>
             <div className='header-content'>
-                <div className='header-logo'>
-                    <h1>Projects</h1>
+                <div className='header-title'>
+                    <h1>Matthew Copeland</h1>
                 </div>
                 <nav>
                     <Link className='nav-link' to={'/home'}>Home</Link>
@@ -18,6 +18,5 @@ function Header() {
         </header>
     )
 }
-
 
 export { Header }
