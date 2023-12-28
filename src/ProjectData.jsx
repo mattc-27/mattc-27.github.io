@@ -9,9 +9,9 @@ const ProjectData = [
 ,
     {
         id: 2,
-        name: 'Landing page example',
+        name: 'ECommerce Demo',
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum incidunt perspiciatis eligendi repudiandae dolor. Tempore, ex officiis quidem quod esse autem nobis eaque facilis quia asperiores odio eos corrupti aliquid',
-        liveUrl: 'https://mattc-27.github.io/example'
+        liveUrl: 'https://mattc-27.github.io/ecommerce-demo/'
     }
 ]
 
